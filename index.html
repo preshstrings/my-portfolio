@@ -3,30 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Precious Henry - UI/UX Designer. Creating clean, intuitive digital experiences with a focus on simplicity and modern aesthetics.">
+  <meta name="theme-color" content="#7b5cff">
 
-  <title>UI/UX Portfolio</title>
+  <title>Precious Henry | UI/UX Designer Portfolio</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Sora:wght@600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<header class="navbar">
-  <div class="logo">PH.</div>
+<header class="navbar" role="banner">
+  <div class="logo" aria-label="Precious Henry - UI/UX Designer">PH.</div>
 
-  <nav>
-    <a href="#">Home</a>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="main-navigation" aria-label="Main navigation">
+    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#footer">Contact</a>
   </nav>
 </header>
 
-
-<section class="hero">
+<section class="hero" id="home" aria-label="Hero section">
   <div class="fade-in">
     <h1>
       Designing <span class="gradient-text">clean digital experiences</span>
@@ -40,13 +44,10 @@
   </div>
 </section>
 
-
-<section class="about" id="about">
+<section class="about" id="about" aria-label="About section">
   <div class="about-container">
-
-    <!-- TEXT -->
     <div class="about-text fade-in">
-      <h2 class="section-title">About Me</h2>
+      <h2>About Me</h2>
 
       <p>
         I'm a UI/UX designer focused on creating clean, intuitive, and visually engaging digital experiences.
@@ -57,108 +58,105 @@
       </p>
 
       <p>
-        Tools I use: Figma, and modern web technologies.
+        Tools I use: Figma, wireframing, prototyping, and modern web technologies.
       </p>
 
-      <a href="Precious_Henry_UIUX_CV_Updated.pdf" class="btn btn-primary">Download CV ↓</a>
+      <a href="Precious_Henry_UIUX_CV_Updated.pdf" class="btn btn-primary" download>Download CV</a>
     </div>
 
-    <!-- CARDS -->
     <div class="about-card fade-in">
-      <div class="glass-card">
+      <article class="glass-card">
         <h3>Design Philosophy</h3>
         <p>
           Simplicity is key. I believe great design should feel effortless and guide users naturally.
         </p>
-      </div>
+      </article>
 
-      <div class="glass-card">
+      <article class="glass-card">
         <h3>Focus</h3>
         <p>
-          UI Design • UX Research • Prototyping • Interaction Design
+          UI Design | UX Research | Prototyping | Interaction Design
         </p>
-      </div>
+      </article>
     </div>
-
   </div>
 </section>
 
-<section class="projects" id="projects">
+<section class="projects" id="projects" aria-label="Projects section">
   <h2 class="section-title fade-in">Featured Projects</h2>
 
   <div class="project-grid">
-
-    <div class="project-card fade-in">
-      <img src="gaming.jpg" alt="Gaming site">
+    <article class="project-card fade-in">
+      <img src="gaming.jpg" alt="Gaming site landing page design">
 
       <div class="project-content">
         <h3>Gaming Landing Page</h3>
         <p>A modern gaming landing page designed for engagement and simplicity.</p>
 
-        <div class="tags">
-          <span>UI/UX</span>
-          <span>Website</span>
+        <div class="tags" role="list">
+          <span role="listitem">UI/UX</span>
+          <span role="listitem">Website</span>
         </div>
 
-        <a href="https://www.figma.com/design/TeayKDMwqNEe9BrGKItHln/Gaming-site?node-id=0-1&t=QhuoAs4NudJaGngQ-1" target="_blank" class="view-btn">
-          View Case Study ↗
+        <a href="https://www.figma.com/design/TeayKDMwqNEe9BrGKItHln/Gaming-site?node-id=0-1&t=QhuoAs4NudJaGngQ-1" target="_blank" rel="noopener noreferrer" class="view-btn">
+          View Case Study
         </a>
       </div>
-    </div>
+    </article>
 
-    <div class="project-card fade-in">
-      <img src="HOME.png">
+    <article class="project-card fade-in">
+      <img src="HOME.png" alt="E-commerce website design">
 
       <div class="project-content">
         <h3>E-commerce Website</h3>
         <p>A clean shopping experience with focus on usability.</p>
 
-        <div class="tags">
-          <span>Web Design</span>
-          <span>UX</span>
+        <div class="tags" role="list">
+          <span role="listitem">Web Design</span>
+          <span role="listitem">UX</span>
         </div>
 
-        <a href="https://figma.com" target="_blank" class="view-btn">
-          View Case Study ↗
+        <a href="HOME.png" target="_blank" rel="noopener noreferrer" class="view-btn">
+          View Design
         </a>
       </div>
-    </div>
+    </article>
 
-    <div class="project-card fade-in">
-      <img src="FIFNITY GYM.png" alt="FIFNITY GYM">
+    <article class="project-card fade-in">
+      <img src="FIFNITY GYM.png" alt="Gym app mobile design">
 
       <div class="project-content">
-        <h3>GYM APP</h3>
+        <h3>Gym App</h3>
         <p>A fitness app designed for simplicity and motivation.</p>
 
-        <div class="tags">
-          <span>Mobile App</span>
-          <span>UI/UX</span>
+        <div class="tags" role="list">
+          <span role="listitem">Mobile App</span>
+          <span role="listitem">UI/UX</span>
         </div>
 
-        <a href="https://figma.com" target="_blank" class="view-btn">
-          View Case Study ↗
+        <a href="https://www.figma.com/design/q8zcSUKUI59kKBGxjXkd60/Untitled?node-id=0-1&t=rWtrlcRwzEtAK9n0-1" target="_blank" rel="noopener noreferrer" class="view-btn">
+          View Case Study
         </a>
       </div>
-    </div>
-
+    </article>
   </div>
 </section>
 
-<footer class="footer" id="footer">
+<footer class="footer" id="footer" role="contentinfo">
   <h2>Let's work together</h2>
   <p>Got a project or idea? Let's bring it to life.</p>
 
   <div class="footer-links">
-    <a href="mailto:precioushenry2008@gmail.com">Email</a>
-    <a href="https://wa.me/08147591090">WhatsApp</a>
-    <a href="https://www.linkedin.com/in/precious-henry-8334a1402 ">LinkedIn</a>
+    <a href="mailto:precioushenry2008@gmail.com" aria-label="Email me">Email</a>
+    <a href="https://wa.me/2348147591090" aria-label="Message me on WhatsApp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/precious-henry-8334a1402" aria-label="Visit my LinkedIn profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </div>
 
   <p class="copyright">
-    © 2026 Precious Henry. All rights reserved.
+    2026 Precious Henry. All rights reserved.
   </p>
 </footer>
 
+<script src="assets/js/animations.js" defer></script>
 </body>
 </html>
